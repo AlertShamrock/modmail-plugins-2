@@ -45,7 +45,7 @@ class Suggest(commands.Cog):
                 embed=discord.Embed(title=suggestion, color=self.bot.main_color)
                 embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
                 await suggestion_channel.send(embed=embed)
-                await embed.message.add_reaction('✅')
+                await ctx.embed.add_reaction('✅')
 
 def setup(bot):
     bot.add_cog(Suggest(bot))
