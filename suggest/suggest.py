@@ -47,7 +47,7 @@ class Suggest(commands.Cog):
                 message.channel.send(upcomingEmbed).then(embedMessage => {
       embedMessage.react('👍');
       embedMessage.react('👎');
-    })
+    });
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 def setup(bot):
