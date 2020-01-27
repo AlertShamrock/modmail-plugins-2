@@ -42,7 +42,7 @@ class Suggest(commands.Cog):
             else:
                 suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
                 embed=discord.Embed(title=suggestion, color=self.bot.main_color)
-                embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
+                embed.set_author(name="Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
                 await suggestion_channel.send(embed=embed)
                 await embed.add_reaction('\N{WHITE HEAVY CHECK MARK}')
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
