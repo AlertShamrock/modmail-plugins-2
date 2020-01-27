@@ -45,7 +45,7 @@ class Suggest(commands.Cog):
                 embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
                 await suggestion_channel.send(embed=embed).then(embed => { 
 embed.add_reaction('👍');
-embed.add_reaction('👎')})
+embed.add_reaction('👎')}})
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 def setup(bot):
