@@ -46,7 +46,7 @@ class Suggest(commands.Cog):
                 await suggestion_channel.send(embed=embed).then(embed => {
       embed.add_reaction('👍');
       embed.add_reaction('👎');
-                await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')}
+                await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')})
 
 def setup(bot):
     bot.add_cog(Suggest(bot))
