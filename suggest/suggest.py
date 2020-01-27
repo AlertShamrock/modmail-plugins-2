@@ -42,8 +42,8 @@ class Suggest(commands.Cog):
             else:
                 suggestion_channel = self.bot.get_channel(int(config["suggestion-channel"]["channel"]))
 
-                embed=discord.Embed(title=suggestion, color=self.bot.main_color)
-                embed.set_author(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
+                embed=discord.Embed(title=f"suggestion", color=self.bot.main_color)
+                embed.set_footer(name=f"Suggestion by {ctx.author}:", icon_url=ctx.author.avatar_url)
                 await suggestion_channel.send(embed=embed)
                 await ctx.message.react('{:white_check_mark:}')
 
