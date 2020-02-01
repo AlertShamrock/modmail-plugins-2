@@ -14,9 +14,9 @@ class Information(Cog):
         self.bot = bot
     
     @commands.command()
-    @checks.has_permissions(PermissionLevel.REGULAR)
+    @checks.has_permissions(PermissionLevel.ADMIN)
     async def information(self, ctx):
-        """Information about this server."""
+        """Command center."""
 
         embed = discord.Embed(
             title="__**Commands**__",
