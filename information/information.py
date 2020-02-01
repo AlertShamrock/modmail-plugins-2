@@ -21,43 +21,43 @@ class Information(Cog):
         embed = discord.Embed(
             title="__**Commands**__",
             color=self.bot.main_color,
-            description="__**Update your Discord rank**__
-Say this command `!getroles`
+            description="__**Update your Discord rank**__\n
+            Say this command `!getroles`\n\n
 
-__**Report**__
-Reporting a Discord User!
-**Command**
-`?report <Discord User> <Reason>`
+__**Report**__\n
+Reporting a Discord User!\n
+**Command**\n
+`?report <Discord User> <Reason>`\n\n
 
-__**Inactivity notice**__
-Going on vacation, or not going be on base?
-**Say these commands**
-`!apply`
-`/apply`
-**NOTE:** Can be demoted until HQ (Head Quarters) approves of your inactivity request.
+__**Inactivity notice**__\n
+Going on vacation, or not going be on base?\n
+**Say these commands**\n
+`!apply`\n
+`/apply`\n
+**NOTE:** Can be demoted until HQ (Head Quarters) approves of your inactivity request.\n\n
 
-__**Suggestions**__
-Want to suggest something to Army discord or on to a base?
-**Say these commands**
-**Add these before you MESSAGE**
-***Message Prefix***
-`[BASE]`
-`[DISCORD]`
-`[GROUP]`
+__**Suggestions**__\n
+Want to suggest something to Army discord or on to a base?\n
+**Say these commands**\n
+**Add these before you MESSAGE**\n
+***Message Prefix***\n
+`[BASE]`\n
+`[DISCORD]`\n
+`[GROUP]`\n\n
 
-**Command:**
-`!suggest (PREFIX) (message)`
+**Command:**\n
+`!suggest (PREFIX) (message)`\n\n
 
-__**Quote**__
-Add a quote onto quotes channel!
-**Command**
-`!quote <Quote here>`
+__**Quote**__\n
+Add a quote onto quotes channel!\n
+**Command**\n
+`!quote <Quote here>`\n\n
 
-------------------------------------------------------------------------------------------
-__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__
+------------------------------------------------------------------------------------------\n
+__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__\n
 ------------------------------------------------------------------------------------------",
         )
-        embed.add_field(name="__Update your Discord rank__",value="**Command** \n `!getroles`", inline=false)
+        ##embed.add_field(name="__Update your Discord rank__",value="**Command** \n `!getroles`", inline=false)
         embed.set_thumbnail(url=ctx.guild.icon_url)
         await ctx.send(embed=embed)
 
