@@ -44,7 +44,7 @@ class Quote(commands.Cog):
                 
                 embed=discord.Embed(title=quote, color=self.bot.main_color)
                 embed.set_author(name=f"Quote sent by {ctx.author}:", icon_url=ctx.author.avatar_url)
-                embed.set_footer(text=f"Say ?quote <Message here> to send a quote!")
+                ##embed.set_footer(text="Say ?quote <Message here> to send a quote!")
                 await quote_channel.send(embed=embed)
                 
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
