@@ -23,7 +23,7 @@ class Information(Cog):
             color=self.bot.main_color,
             description="__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__",
         )
-        embed.add_field(name="__Update your Discord rank__",value="Say this command `!getroles`")
+        embed.add_field(name="__Update your Discord rank__",value="**Command** \n `!getroles`")
         embed.add_field(name="__Report__",value="Reporting a Discord User! **Command** `?report <Discord User> <Reason>`")
         ##embed.add_field(name="__Inactivity notice__",value="Going on vacation, or not going be on base? \n **Say these commands** \n
 ##`!apply`\n **NOTE:** Can be demoted until HQ (Head Quarters) approves of your inactivity request.")
