@@ -14,7 +14,7 @@ class Information(Cog):
         self.bot = bot
     
     @commands.command()
-    @checks.has_permissions(PermissionLevel.Regular)
+    @checks.has_permissions(PermissionLevel.ADMIN)
     async def information(self, ctx):
         """Command center."""
 
