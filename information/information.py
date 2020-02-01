@@ -21,8 +21,7 @@ class Information(Cog):
         embed = discord.Embed(
             title="__**Commands**__",
             color=self.bot.main_color,
-            description="__**Update your Discord rank**__\n
-            Say this command `!getroles`\n\n
+            description="__**Update your Discord rank**__\nSay this command `!getroles`\n\n
 
 __**Report**__\n
 Reporting a Discord User!\n
