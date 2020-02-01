@@ -21,9 +21,7 @@ class Information(Cog):
         embed = discord.Embed(
             title="__**Commands**__",
             color=self.bot.main_color,
-            description="(------------------------------------------------------------------------------------------ \n
-__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__ \n
-------------------------------------------------------------------------------------------",
+            description="__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__",
         )
         embed.add_field(name="__Update your Discord rank__",value="Say this command `!getroles`")
         embed.add_field(name="__Report__",value="Reporting a Discord User! \n **Command** \n
