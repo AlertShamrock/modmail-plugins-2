@@ -21,42 +21,17 @@ class Information(Cog):
         embed = discord.Embed(
             title="__**Commands**__",
             color=self.bot.main_color,
-            description="(__**Update your Discord rank**__
-Say this command `!getroles`
-
-__**Report**__
-Reporting a Discord User!
-**Command**
-`?report <Discord User> <Reason>`
-
-__**Inactivity notice**__
-Going on vacation, or not going be on base?
-**Say these commands**
-`!apply`
-`/apply`
-**NOTE:** Can be demoted until HQ (Head Quarters) approves of your inactivity request.
-
-__**Suggestions**__
-Want to suggest something to Army discord or on to a base?
-**Say these commands**
-**Add these before you MESSAGE**
-***Message Prefix***
-`[BASE]`
-`[DISCORD]`
-`[GROUP]`
-
-**Command:**
-`!suggest (PREFIX) (message)`
-
-__**Quote**__
-Add a quote onto quotes channel!
-**Command**
-`!quote <Quote here>`
-
-------------------------------------------------------------------------------------------
-__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__
-------------------------------------------------------------------------------------------)",
+            description="(------------------------------------------------------------------------------------------ \n
+__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__ \n
+------------------------------------------------------------------------------------------",
         )
+        embed.add_field(name="__Update your Discord rank__",value="Say this command `!getroles`")
+        embed.add_field(name="__Report__",value="Reporting a Discord User! \n **Command** \n
+`?report <Discord User> <Reason>`")
+        embed.add_field(name="__Inactivity notice__",value="Going on vacation, or not going be on base? \n **Say these commands** \n
+`!apply`\n **NOTE:** Can be demoted until HQ (Head Quarters) approves of your inactivity request.")
+        embed.add_field(name="__Suggestions__",value="Want to suggest something to Army discord or on to a base? \n **Say these commands** \n **Add these before you MESSAGE** \n ***Message Prefix*** \n `[BASE]` \n `[DISCORD]` \n `[GROUP]` \n **Command:** \n`!suggest (PREFIX) (message)`")
+        embed.add_field(name="__Quote__",value="Add a quote onto quotes channel! \n **Command** \n `!quote <Quote here>`")
         embed.set_thumbnail(url=ctx.guild.icon_url)
         await ctx.send(embed=embed)
 
