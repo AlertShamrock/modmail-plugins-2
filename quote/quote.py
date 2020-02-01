@@ -41,9 +41,11 @@ class Quote(commands.Cog):
                 await ctx.send(embed=embed)
             else:
                 quote_channel = self.bot.get_channel(int(config["quote-channel"]["channel"]))
+                
                 embed=discord.Embed(title=quote, color=self.bot.main_color)
                 embed.set_author(name=f"quote by {ctx.author}:", icon_url=ctx.author.avatar_url)
                 await quote_channel.send(embed=embed)
+                
                 await ctx.message.add_reaction('\N{WHITE HEAVY CHECK MARK}')
 
 def setup(bot):
