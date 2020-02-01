@@ -21,7 +21,41 @@ class Information(Cog):
         embed = discord.Embed(
             title="__**Commands**__",
             color=self.bot.main_color,
-            description="__**Update your Discord rank**__ /n Say this command `!getroles`",
+            description="__**Update your Discord rank**__
+Say this command `!getroles`
+
+__**Report**__
+Reporting a Discord User!
+**Command**
+`?report <Discord User> <Reason>`
+
+__**Inactivity notice**__
+Going on vacation, or not going be on base?
+**Say these commands**
+`!apply`
+`/apply`
+**NOTE:** Can be demoted until HQ (Head Quarters) approves of your inactivity request.
+
+__**Suggestions**__
+Want to suggest something to Army discord or on to a base?
+**Say these commands**
+**Add these before you MESSAGE**
+***Message Prefix***
+`[BASE]`
+`[DISCORD]`
+`[GROUP]`
+
+**Command:**
+`!suggest (PREFIX) (message)`
+
+__**Quote**__
+Add a quote onto quotes channel!
+**Command**
+`!quote <Quote here>`
+
+------------------------------------------------------------------------------------------
+__Say ***THESE*** commands in ***THIS*** channel **ONLY!**__
+------------------------------------------------------------------------------------------",
         )
         embed.add_field(name="__Update your Discord rank__",value="**Command** \n `!getroles`", inline=false)
         embed.set_thumbnail(url=ctx.guild.icon_url)
