@@ -21,8 +21,7 @@ class Information(Cog):
         embed = discord.Embed(
             title="__**Commands**__",
             color=self.bot.main_color,
-            description="
-__**Update your Discord rank**__
+            description="(__**Update your Discord rank**__
 Say this command `!getroles`
 
 __**Report**__
@@ -56,7 +55,7 @@ Add a quote onto quotes channel!
 
 ------------------------------------------------------------------------------------------
 __Say ***THESE*** commands in ***THIS*** channel **ONLY!**__
-------------------------------------------------------------------------------------------",
+------------------------------------------------------------------------------------------)",
         )
         embed.set_thumbnail(url=ctx.guild.icon_url)
         await ctx.send(embed=embed)
