@@ -41,7 +41,7 @@ class Quote(commands.Cog):
                 await ctx.send(embed=embed)
             else:
                 quote_channel = self.bot.get_channel(int(config["quote-channel"]["channel"]))
-                
+                await ctx.channel.send("<@&687701012357578820>");
                 embed=discord.Embed(title=quote, color=self.bot.main_color)
                 embed.set_author(name=f"Quote sent by {ctx.author}:", icon_url=ctx.author.avatar_url)
                 await quote_channel.send(embed=embed)
