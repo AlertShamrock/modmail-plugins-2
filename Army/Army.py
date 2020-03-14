@@ -3,7 +3,7 @@ from discord.ext import commands
 from core import checks
 from core.models import PermissionLevel
 
-class army(commands.Cog):
+class Army(commands.Cog):
     """
     Let's you send a announcements to a designated channel.
     """
@@ -70,4 +70,4 @@ class army(commands.Cog):
 
 
 def setup(bot):
-    bot.add_cog(army(bot))
+    bot.add_cog(Army(bot))
