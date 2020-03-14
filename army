@@ -13,7 +13,7 @@ class army(commands.Cog):
 
     @commands.command(aliases = ['ar'])
     @checks.has_permissions(PermissionLevel.ADMIN)
-    async def setquotechannel(self, ctx, channel: discord.TextChannel):
+    async def setarmychannel(self, ctx, channel: discord.TextChannel):
         """
         Set the channel where announcemnts go.
         """
