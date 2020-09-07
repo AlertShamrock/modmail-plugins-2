@@ -30,7 +30,7 @@ class MuteCog(commands.Cog):
     
     @commands.command()
     @checks.has_permissions(PermissionLevel.MODERATOR)
-    async def tempmute(self, ctx, member:discord.Member, time:TimeConverter):
+    async def tempmute(self, ctx, member:discord.Member, time:TimeConverter = "6h"):
         """Mutes a member for the specified time- time in 2d 10h 3m 2s format ex:
         ?tempmute @Someone 1d"""
         print(1)
