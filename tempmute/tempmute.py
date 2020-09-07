@@ -60,7 +60,7 @@ class MuteCog(commands.Cog):
                 embed = discord.Embed(
                     title= "Mute",
                     description= f"{member.mention} has been muted by {ctx.message.author.mention} for {time}s",
-                    color=008000
+                    color=0xFF0000
                 )
                 await ctx.send(embed=embed)
                 print(4)
