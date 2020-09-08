@@ -56,7 +56,7 @@ class MuteCog(commands.Cog):
                 role = await ctx.guild.create_role(name="Muted")
                 for channel in ctx.guild.text_channels:
                     await channel.set_permissions(role, send_messages=False)
-                await member.add_roles(670777533993582654)
+                await member.add_roles(role)
                 embed = discord.Embed(
                     title= "Mute",
                     description= f"{member.mention} has been muted by {ctx.message.author.mention} for {time}s",
@@ -73,7 +73,7 @@ class MuteCog(commands.Cog):
                 print(5)
             if time:
                 await asyncio.sleep(time)
-                await member.remove_roles(670777533993582654)
+                await member.remove_roles(role)
                 print(6)
              
     @tempmute.error
