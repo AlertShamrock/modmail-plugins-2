@@ -30,9 +30,9 @@ class MuteCog(commands.Cog):
     
     @commands.command()
     @checks.has_permissions(PermissionLevel.MODERATOR)
-    async def tempmute(self, ctx, member:discord.Member, *, time:TimeConverter):
+    async def tempmute(self, ctx, member:discord.Member, time:TimeConverter):
         """Mutes a member for the specified time- time in 2d 10h 3m 2s format ex:
-        &mute @Someone 1d"""
+        ?tempmute @Someone 1d"""
         print(1)
         if time == None:
             embed = discord.Embed(
@@ -51,7 +51,7 @@ class MuteCog(commands.Cog):
             await ctx.send(embed=embed)
             print(3)
         else:
-            role = discord.utils.get(ctx.guild.roles, name="Muted")
+            role = ctx.guild.get_role(670777533993582654)
             if role == None:
                 role = await ctx.guild.create_role(name="Muted")
                 for channel in ctx.guild.text_channels:
@@ -60,13 +60,13 @@ class MuteCog(commands.Cog):
                 embed = discord.Embed(
                     title= "Mute",
                     description= f"{member.mention} has been muted by {ctx.message.author.mention} for {time}s",
-                    color=0x00FF00
+                    color=0xFF0000
                 )
                 await ctx.send(embed=embed)
                 print(4)
                 embed = discord.Embed(
                     title= "Muted",
-                    description= f"You have been muted in {ctx.guiild.name} by {ctx.author.mention} for {time}",
+                    description= f"You have been muted in {ctx.guild.name} by {ctx.author.mention} for {time}",
                     color=0x06c9ff
                 )
                 await member.send(embed=embed)
